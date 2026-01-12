@@ -13,6 +13,9 @@ urlpatterns=[
     path('comments', CommentCreateAPIView.as_view(), name='create-comment'),
     path('comments/<int:blog_id>/', BlogCommentsListAPIView.as_view(), name='list-comments'),
     # path('send-email/', send_email_view, name='send_email'),
+    path("git",git,name='git'),
+
+    
 
 
 

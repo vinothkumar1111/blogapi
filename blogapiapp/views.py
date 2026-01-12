@@ -16,6 +16,9 @@ from rest_framework.generics import CreateAPIView, ListAPIView
 def blogapi(req):
     return HttpResponse("BlogApi")
 
+
+def git(req):
+    return HttpResponse("Git")
 class Blogsave(GenericAPIView,CreateModelMixin,ListModelMixin):
     queryset=Blog.objects.all()   
     serializer_class=Blogserializers
